@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>School</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+
+  <servlet>
+    <servlet-name>IssueBook</servlet-name>
+    <servlet-class>com.clientserver.servlet.IssueBookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IssueBook</servlet-name>
+    <url-pattern>/IssueBook</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>New</servlet-name>
+    <servlet-class>com.clientserver.servlet.NewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>New</servlet-name>
+    <url-pattern>/New</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.clientserver.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.clientserver.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+    
+ 
+ 
+<servlet>
+    <servlet-name>User</servlet-name>
+    <servlet-class>com.clientserver.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/User</url-pattern>
+  </servlet-mapping> 
+ 
+ 
+ 
+  
+  
+</web-app>
